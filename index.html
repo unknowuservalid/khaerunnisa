@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaerun Nisa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #8989ff, #FFFFFF); /* gradient from dark blue to white */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .profile {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: white; /* set background color to white */
+            opacity: 0;
+            animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        .profile img {
+            width: 150px;
+            height: 170px;
+            border-radius: 50%;
+            border: 2px solid #ccc; /* Added a light grey border */
+            opacity: 0;
+            animation: fadeInAnimation ease 3s;
+            animation-delay: 0.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        .profile h1, .profile p {
+            opacity: 0;
+            animation: fadeInAnimation ease 3s;
+            animation-fill-mode: forwards;
+        }
+        .profile h1 { animation-delay: 1s; }
+        .profile p { animation-delay: 1.5s; }
+
+        @keyframes fadeInAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="nisa.jpeg" alt="Khaerun Nisa">
+        <h1>Khaerun Nisa</h1>
+        <p>Kelas: XI Teknik Komputer Jaringan 1</p>
+        <p>NISN: 222230446</p>
+        <p>Tempat, Tanggal Lahir: Karawang, 25 Desember 2006</p>
+        <p>Alamat: Rengasjaya, Rengasdengklok, Karawang, Jawa Barat</p>
+        <p>Hobi: Bersepeda</p>
+        <p>Cita-cita: Polisi Wanita</p>
+        <br>
+        <a href="https://www.instagram.com/nkhrnnisa25?igsh=eDdlbmFpeWdxMnEy" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;">
+            Follow Instagram
+        </a>
+    </div>
+</body>
+</html>
